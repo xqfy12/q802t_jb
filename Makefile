@@ -54,7 +54,7 @@ RESOLUTION := 720x1280
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/pri-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth BluetoothExt Stk
+vendor_saved_apps := Bluetooth BluetoothExt Stk Shell MIPop FMRecord FM2
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.

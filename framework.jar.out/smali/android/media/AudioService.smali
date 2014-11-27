@@ -59,7 +59,7 @@
 
 .field private static final GROUP_TOUCH_SOUNDS:Ljava/lang/String; = "touch_sounds"
 
-.field private static final HEADSET_NOTIFICATION_ID:I = 0x1080083
+.field private static final HEADSET_NOTIFICATION_ID:I = #android:drawable@stat_sys_headset#t
 
 .field public static final IN_VOICE_COMM_FOCUS_ID:Ljava/lang/String; = "AudioFocus_For_Phone_Ring_And_Calls"
 
@@ -897,7 +897,7 @@
 
     move-result-object v0
 
-    const v1, 0x1110033
+    const v1, #android:bool@config_voice_capable#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -968,7 +968,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e0004
+    const v1, #android:integer@config_soundEffectVolumeDb#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -976,34 +976,29 @@
 
     sput v0, Landroid/media/AudioService;->sSoundEffectVolumeDb:I
 
-    .line 487
-    new-instance v0, Landroid/view/VolumePanel;
+    new-instance v0, Landroid/view/BaiduVolumePanel;
 
-    invoke-direct {v0, p1, p0}, Landroid/view/VolumePanel;-><init>(Landroid/content/Context;Landroid/media/AudioService;)V
+    invoke-direct {v0, p1, p0}, Landroid/view/BaiduVolumePanel;-><init>(Landroid/content/Context;Landroid/media/AudioService;)V
 
     iput-object v0, p0, Landroid/media/AudioService;->mVolumePanel:Landroid/view/VolumePanel;
 
-    .line 488
     const/4 v0, 0x0
 
     iput v0, p0, Landroid/media/AudioService;->mMode:I
 
-    .line 489
     const/4 v0, 0x0
 
     iput v0, p0, Landroid/media/AudioService;->mForcedUseForComm:I
 
-    .line 491
     invoke-direct {p0}, Landroid/media/AudioService;->createAudioSystemThread()V
 
-    .line 493
     iget-object v0, p0, Landroid/media/AudioService;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
-    const v1, 0x111004e
+    const v1, #android:bool@config_camera_sound_forced#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1061,7 +1056,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e003f
+    const v1, #android:integer@config_safe_media_volume_index#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1078,7 +1073,7 @@
 
     move-result-object v0
 
-    const v1, 0x1110051
+    const v1, #android:bool@config_useFixedVolume#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1337,7 +1332,7 @@
 
     move-result-object v0
 
-    const v1, 0x1110010
+    const v1, #android:bool@config_useMasterVolume#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1353,7 +1348,7 @@
 
     move-result-object v0
 
-    const v1, 0x1070014
+    const v1, #android:array@config_masterVolumeRamp#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getIntArray(I)[I
 
@@ -3045,13 +3040,11 @@
 
     check-cast v0, Landroid/app/NotificationManager;
 
-    .line 3974
     .local v0, mNotificationMgr:Landroid/app/NotificationManager;
-    const v1, 0x1080083
+    const v1, #android:drawable@stat_sys_headset#t
 
     invoke-virtual {v0, v1}, Landroid/app/NotificationManager;->cancel(I)V
 
-    .line 3975
     return-void
 .end method
 
@@ -7215,7 +7208,7 @@
 
     move-result-object v1
 
-    const v2, 0x111004e
+    const v2, #android:bool@config_camera_sound_forced#t
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -8339,7 +8332,7 @@
 
     .line 4446
     :cond_3
-    const-wide/32 v19, 0x10803000
+    const-wide/32 v19, #android:drawable@ic_lockscreen_unlock_normal#t0
 
     cmp-long v19, v17, v19
 
@@ -8741,7 +8734,7 @@
 
     move-result-object v11
 
-    const v12, 0x10f0001
+    const v12, #android:xml@audio_assets#t
 
     invoke-virtual {v11, v12}, Landroid/content/res/Resources;->getXml(I)Landroid/content/res/XmlResourceParser;
 
@@ -9518,7 +9511,7 @@
 
     move-result-object v0
 
-    const v1, 0x10e003f
+    const v1, #android:integer@config_safe_media_volume_index#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -9535,7 +9528,7 @@
 
     move-result-object v0
 
-    const v1, 0x111004c
+    const v1, #android:bool@config_safe_media_volume_enabled#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -13091,7 +13084,7 @@
     .locals 10
 
     .prologue
-    const v9, 0x1080083
+    const v9, #android:drawable@stat_sys_headset#t
 
     const/4 v8, 0x0
 
@@ -13130,7 +13123,7 @@
     .local v3, mNotificationMgr:Landroid/app/NotificationManager;
     iget-object v6, p0, Landroid/media/AudioService;->mContext:Landroid/content/Context;
 
-    const v7, 0x1040019
+    const v7, #android:string@headset_plugin_view_title#t
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 
@@ -13140,7 +13133,7 @@
     .local v5, title:Ljava/lang/CharSequence;
     iget-object v6, p0, Landroid/media/AudioService;->mContext:Landroid/content/Context;
 
-    const v7, 0x1040018
+    const v7, #android:string@headset_plugin_view_text#t
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

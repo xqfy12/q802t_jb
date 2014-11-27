@@ -528,6 +528,7 @@
     invoke-direct {p0, v0, v1}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->setEnabledFunctions(Ljava/lang/String;Z)V
 
     .line 642
+    invoke-direct {p0}, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->updateAdbNotification()V
     :cond_0
     iget-object v0, p0, Lcom/android/server/usb/UsbDeviceManager$UsbHandler;->this$0:Lcom/android/server/usb/UsbDeviceManager;
 
@@ -2117,7 +2118,7 @@
     .local v11, pcConnectIntent:Landroid/content/Intent;
     const-string v18, "com.android.settings"
 
-    const-string v19, "com.android.settings.ConnectSettings"
+    const-string v19, "com.android.settings.UsbSettings"
 
     move-object/from16 v0, v18
 
@@ -2514,7 +2515,7 @@
 
     const-string v19, "com.android.settings"
 
-    const-string v20, "com.android.settings.ConnectSettings"
+    const-string v20, "com.android.settings.UsbSettings"
 
     invoke-direct/range {v18 .. v20}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 

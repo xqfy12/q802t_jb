@@ -639,16 +639,14 @@
 
     const/4 v5, 0x6
 
-    .line 352
-    invoke-virtual {p1}, Ljava/io/File;->getCanonicalPath()Ljava/lang/String;
+    invoke-virtual {p1}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 354
     .local v1, filename:Ljava/lang/String;
     const-string v2, "1"
 
-    const-string/jumbo v3, "persist.sys.isExternalSdFirst"
+    const-string v3, "persist.sys.isExternalSdFirst"
 
     const-string v4, "0"
 

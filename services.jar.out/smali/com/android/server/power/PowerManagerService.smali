@@ -9,6 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/android/server/power/PowerManagerService$BaiduInjector;,
         Lcom/android/server/power/PowerManagerService$DisplayBlankerImpl;,
         Lcom/android/server/power/PowerManagerService$ScreenOnBlockerImpl;,
         Lcom/android/server/power/PowerManagerService$SuspendBlockerImpl;,
@@ -2692,7 +2693,7 @@
 
     .line 520
     .local v0, resources:Landroid/content/res/Resources;
-    const v1, 0x1110019
+    const v1, #android:bool@config_unplugTurnsOnScreen#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -2700,8 +2701,7 @@
 
     iput-boolean v1, p0, Lcom/android/server/power/PowerManagerService;->mWakeUpWhenPluggedOrUnpluggedConfig:Z
 
-    .line 522
-    const v1, 0x1110043
+    const v1, #android:bool@config_dreamsSupported#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -2709,8 +2709,7 @@
 
     iput-boolean v1, p0, Lcom/android/server/power/PowerManagerService;->mDreamsSupportedConfig:Z
 
-    .line 524
-    const v1, 0x1110044
+    const v1, #android:bool@config_dreamsEnabledByDefault#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -2718,8 +2717,7 @@
 
     iput-boolean v1, p0, Lcom/android/server/power/PowerManagerService;->mDreamsEnabledByDefaultConfig:Z
 
-    .line 526
-    const v1, 0x1110046
+    const v1, #android:bool@config_dreamsActivatedOnSleepByDefault#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -2727,8 +2725,7 @@
 
     iput-boolean v1, p0, Lcom/android/server/power/PowerManagerService;->mDreamsActivatedOnSleepByDefaultConfig:Z
 
-    .line 528
-    const v1, 0x1110045
+    const v1, #android:bool@config_dreamsActivatedOnDockByDefault#t
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -3961,6 +3958,8 @@
     .line 1201
     :cond_3
     invoke-direct {p0}, Lcom/android/server/power/PowerManagerService;->updateSuspendBlockerLocked()V
+
+    invoke-static/range {p0 .. p0}, Lcom/android/server/power/PowerManagerService$BaiduInjector;->updateButtonLightLocked(Lcom/android/server/power/PowerManagerService;)V
 
     goto :goto_0
 .end method
@@ -8198,16 +8197,14 @@
 
     iput v2, v0, Lcom/android/server/power/PowerManagerService;->mDirty:I
 
-    .line 513
     invoke-direct/range {p0 .. p0}, Lcom/android/server/power/PowerManagerService;->updatePowerStateLocked()V
 
-    .line 514
+    invoke-static/range {p0 .. p0}, Lcom/android/server/power/PowerManagerService$BaiduInjector;->regitsterButtonLightReceiver(Lcom/android/server/power/PowerManagerService;)V
+
     monitor-exit v17
 
-    .line 515
     return-void
 
-    .line 514
     .end local v13           #filter:Landroid/content/IntentFilter;
     .end local v14           #pm:Landroid/os/PowerManager;
     .end local v15           #resolver:Landroid/content/ContentResolver;
@@ -8677,4 +8674,38 @@
     invoke-static {v0, v1}, Landroid/os/Binder;->restoreCallingIdentity(J)V
 
     throw v2
+.end method
+
+# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
+#.method static synthetic access$invoke-userActivityNoUpdateLocked-b2cdde(Lcom/android/server/power/PowerManagerService;JIII)Z
+#    .locals 1
+#    .parameter "x0"
+#    .parameter "x1"
+#    .parameter "x2"
+#    .parameter "x3"
+#    .parameter "x4"
+#    .prologue
+#    invoke-direct/range {p0 .. p5}, Lcom/android/server/power/PowerManagerService;->userActivityNoUpdateLocked(JIII)Z
+#    move-result v0
+#    return v0
+#.end method
+
+.method static synthetic access$iget-mSettingsObserver-0db185(Lcom/android/server/power/PowerManagerService;)Lcom/android/server/power/PowerManagerService$SettingsObserver;
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mSettingsObserver:Lcom/android/server/power/PowerManagerService$SettingsObserver;
+
+    return-object v0
+.end method
+
+.method static synthetic access$iget-mLightsService-24a2db(Lcom/android/server/power/PowerManagerService;)Lcom/android/server/LightsService;
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    iget-object v0, p0, Lcom/android/server/power/PowerManagerService;->mLightsService:Lcom/android/server/LightsService;
+
+    return-object v0
 .end method
