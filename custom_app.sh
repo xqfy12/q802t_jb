@@ -5,6 +5,9 @@ if [ "$apkBaseName" = "Phone" ];then
         echo ">>> in custom_app for $apkBaseName to adjust the interface "registerForNetworkLocked" with "registerForPersoLocked""
         find $tempSmaliDir/ -name "*.smali" | xargs sed -i 's#registerForNetworkLocked#registerForPersoLocked#g'  
 
+        echo ">>> in custom_app for $apkBaseName to change some permissions for android 4.3"
+        sed -i 's#android:name="android.permission.SEND_SMS_NO_CONFIRMATION"#android:name="android.permission.SEND_RESPOND_VIA_MESSAGE"#g' $tempSmaliDir/AndroidManifest.xml
+
 elif [ "$apkBaseName" = "Settings" ];then
     echo ">>> in custom_app $apkBaseName"
 	
@@ -12,4 +15,16 @@ elif [ "$apkBaseName" = "Settings" ];then
 	sed -i -e "/^\.method.*setOfficialVerifyPreference()V/,/^\.end method/d" $tempSmaliDir/smali/com/android/settings/DeviceInfoSettings.smali
 	sed -i -e "/setOfficialVerifyPreference/d" $tempSmaliDir/smali/com/android/settings/DeviceInfoSettings.smali	
 
+	echo ">>> add origin settings"
+    	sed -i '/com.android.settings.ManageApplicationsSettings/r Settings/settings_headers.xml.part' $tempSmaliDir/res/xml/settings_headers.xml
+
+    	echo ">>> in custom_app for $apkBaseName to disadble select runtime"
+	sed -i 's#android:title="@string/select_runtime_title" android:key="select_runtime"#android:title="@string/select_runtime_title" android:selectable="false" android:key="select_runtime"#g' $tempSmaliDir/res/xml/development_prefs.xml
+
+elif [ "$apkBaseName" = "Contacts" ];then
+        echo ">>> in custom_app for $apkBaseName to remove AlwaysRunningService for android 4.3"
+        sed -i '/AlwaysRunningService/d'  $tempSmaliDir/AndroidManifest.xml
+
+        echo ">>> in custom_app for $apkBaseName to change some permissions for android 4.3"
+        sed -i 's#android:permission="android.permission.SEND_SMS_NO_CONFIRMATION"#android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE"#g' $tempSmaliDir/AndroidManifest.xml
 fi

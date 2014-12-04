@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/edit_profile" android:key="edit_profile"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.stocksettings">
+    <EditTextPreference android:persistent="false" android:singleLine="true" android:title="@string/profile_name" android:key="profile_name" android:dialogTitle="@string/profile_name" />
+    <ListPreference android:entries="@array/alert_entries" android:title="@string/alert_style" android:key="alert_style" android:entryValues="@array/alert_values" />
+    <com.android.stocksettings.profile.ProfileRingerVolumePreference android:persistent="false" android:title="@string/all_volume_title" android:key="ring_volume" android:dialogTitle="@string/all_volume_title" android:streamType="music" />
+    <PreferenceCategory android:title="@string/sound_category_calls_and_notification_title" />
+    <com.android.stocksettings.profile.ProfileRingtonePreference android:persistent="false" android:title="@string/ringtone_title" android:key="ringtone" android:dialogTitle="@string/ringtone_title" android:ringtoneType="ringtone" />
+    <com.android.stocksettings.profile.ProfileRingtonePreference android:persistent="false" android:title="@string/notification_sound_title" android:key="notification_ringtone" android:dialogTitle="@string/notification_sound_dialog_title" android:ringtoneType="notification" />
+    <PreferenceCategory android:title="@string/sound_category_feedback_title" />
+    <CheckBoxPreference android:title="@string/dtmf_tone_enable_title" android:key="dtmf_tone" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/sound_effects_enable_title" android:key="sound_effects" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/lock_sounds_enable_title" android:key="lock_sounds" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/haptic_feedback_enable_title" android:key="haptic_feedback" android:defaultValue="true" />
+</PreferenceScreen>

@@ -63,7 +63,7 @@ vendor_saved_apps := Bluetooth BluetoothExt Stk Shell MIPop FMRecord FM2
 # You need ro decode FMRadio.apk to the project directory(use apktool d FMRadio.apk) first,
 # and then you can make it by:   make FMRadio
 #-----------------------------------------------------------------------------
-#vendor_modify_apps := FMRadio
+vendor_modify_apps := DeviceOriginalSettings stocksettings FM2
 
 ##############################################################################
 # The value decides which vendor jar you want to modify.
@@ -105,7 +105,7 @@ vendor_modify_jars := android.policy framework oem-services pm services-ext serv
 # The command idtoname how to use: first use "apktool d source/system/framework/framework-res.apk other/TMP/framework-res",
 # and then use "idtoname other/TMP/framework-res/res/values/public_master.xml XXXX/smali"(XXXX is the directory where you decode baidu system apk).
 #-----------------------------------------------------------------------------
-baidu_modify_apps := Phone
+baidu_modify_apps := Phone Settings
 
 ##############################################################################
 # The value decides which jar you want to modify, when the jar is based on the baidu framework jar.

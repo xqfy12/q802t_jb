@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="update_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/update_Ssdcard_title" android:key="sd_update" android:summary="@string/update_sdcart_summary" />
+    <PreferenceScreen android:title="@string/system_update_title" android:key="system_update" android:summary="@string/system_update_summary" />
+    <PreferenceScreen android:title="@string/alive_update_title" android:key="alive_update" android:summary="@string/alive_update_summary" />
+</PreferenceScreen>

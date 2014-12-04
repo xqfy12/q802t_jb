@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/location_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.stocksettings.WrappingSwitchPreference android:persistent="true" android:title="@string/location_access_title" android:key="location_toggle" android:summary="@string/location_access_summary" />
+    <PreferenceCategory android:title="@string/location_sources_heading" android:key="location_sources" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/location_gps" android:key="location_gps" android:summary="@string/location_street_level" android:dependency="location_toggle" />
+    <com.android.stocksettings.WrappingCheckBoxPreference android:persistent="false" android:title="@string/location_network_based" android:key="location_network" android:summary="@string/location_neighborhood_level" android:dependency="location_toggle" />
+    <CheckBoxPreference android:title="@string/assisted_gps" android:key="assisted_gps" android:summaryOn="@string/assisted_gps_enabled" android:summaryOff="@string/assisted_gps_disabled" />
+    <PreferenceScreen android:title="@string/location_agps_params_settings_title" android:key="assisted_gps_params" android:dependency="assisted_gps">
+        <intent android:targetPackage="com.android.stocksettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.stocksettings.AgpsSettings" />
+    </PreferenceScreen>
+    <com.android.stocksettings.WrappingIZatCheckBoxPreference android:persistent="true" android:key="location_izat" android:dependency="location_toggle" />
+</PreferenceScreen>

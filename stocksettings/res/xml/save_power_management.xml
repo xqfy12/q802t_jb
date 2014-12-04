@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/save_power_management"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/led_mangement" android:key="led_blink_management">
+        <intent android:targetPackage="com.android.stocksettings" android:targetClass="com.android.stocksettings.LedBlinkManagement" />
+    </Preference>
+</PreferenceScreen>

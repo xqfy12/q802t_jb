@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/led_mangement"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="false" android:title="@string/led_missing_call" android:key="led_missing_call" android:summary="@string/led_missing_call_summary" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/led_missing_message" android:key="led_missing_message" android:summary="@string/led_missing_message_summary" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/led_lowerpower" android:key="led_lowerpower" android:summary="@string/led_lowerpower_summary" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/led_other" android:key="led_other" android:summary="@string/led_other_summary" />
+</PreferenceScreen>

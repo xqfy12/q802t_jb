@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
+    <PreferenceCategory android:title="存储设置">
+        <Preference android:title="@string/character_settings" android:key="character_settings" android:summary="设置外置SD卡为主存储设备，您可以将应用数据保存到sd卡。">
+            <intent android:targetPackage="com.android.stocksettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.stocksettings.SwitchToExternalSD" />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="关于">
+        <Preference android:title="ROM作者信息" android:summary="欢迎使用行云开发组孟西适配的百度云ROM，点击访问本人微博">
+            <intent android:action="android.intent.action.VIEW" android:data="http://weibo.com/42008250" />
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>
