@@ -54,7 +54,7 @@ RESOLUTION := 720x1280
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/pri-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth BluetoothExt Stk Shell MIPop FMRecord FM2
+vendor_saved_apps := Bluetooth BluetoothExt Stk Shell FMRecord FM2
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -63,7 +63,7 @@ vendor_saved_apps := Bluetooth BluetoothExt Stk Shell MIPop FMRecord FM2
 # You need ro decode FMRadio.apk to the project directory(use apktool d FMRadio.apk) first,
 # and then you can make it by:   make FMRadio
 #-----------------------------------------------------------------------------
-vendor_modify_apps := DeviceOriginalSettings stocksettings FM2
+vendor_modify_apps := DeviceOriginalSettings stocksettings FM2 MIPop
 
 ##############################################################################
 # The value decides which vendor jar you want to modify.

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_eraser_set">הגדרות מחק</string>
+    <string name="title_pen_set">הגדרות מכחול</string>
+    <string name="erase_all">מחק הכל</string>
+    <string name="quit_warning">הקלק שנית כדי לצאת ללא שמירה !</string>
+    <string name="app_name">Mi-POP</string>
+    <string name="full_screen">Navbar</string>
+    <string name="mipop_title">Mi-POP</string>
+    <string name="mipop_switch_title">Mi-POP</string>
+    <string name="mipop_switch_summary">לאחר האפשור, הקש על הלחצנים במסך כדי לבצע פעולה, בצורה נוה גם ביד אחת</string>
+    <string name="mipop_fullscreen_title">הסתר סרגל ניווט</string>
+    <string name="mipop_fullscreen_summary">שטח גדול יותר זמין במסך</string>
+    <string name="fullscreenmode">מצב מסך מלא</string>
+    <string name="fullscreenmodeon">הסתר את Mi-POP ואת סרגל הניווט</string>
+    <string name="fullscreenmodeoff">הצג מחדש את Mi-POP ואת סרגל הניווט</string>
+    <string name="Save">שמור</string>
+    <string name="Discard">מחק</string>
+    <string name="Share">שתף</string>
+    <string name="SaveTO">שמור ב-</string>
+    <string name="SaveFail">השמירה נכשלה!</string>
+    <string name="runningFaceDetection">המתן...</string>
+    <string name="power_off">כיבוי</string>
+    <string name="reboot">אתחל מחדש</string>
+    <string name="lock_screen">נעל את המסך</string>
+    <string name="screenshots">צילום מסך</string>
+    <string name="volume">עוצמת קול</string>
+    <string name="mute">השתק</string>
+    <string name="no_support">ארץ לא נתמכת!</string>
+    <string name="fullScreem">מסך מלא</string>
+    <string name="partScreem">חלק</string>
+    <string name="Paint">ציור</string>
+    <string name="mipop_first_key_title">מקש ברירת מחדל</string>
+    <string name="mipop_help_title">עזרה</string>
+    <string name="mipop_update_title">גרסת עדכון</string>
+    <string name="mipop_update_summary">גרסה נוכחית:</string>
+    <string name="can_not_find_version_name">גרסה לא ידועה</string>
+    <string name="cancel">בטל</string>
+    <string name="no_networks">אין רשת זמינה, בדוק את החיבור לרשת</string>
+    <string name="help">עזרה</string>
+    <string name="help1">1. החלק למתיחת Mi-POP. היישום יתכווץ חזרה לאחר שתי שניות ללא פעילות.</string>
+    <string name="help2">2. כוונן את מיקומו האנכי או החלק אותו לאחד הצדדים של המסך.</string>
+    <string name="help3">"3. גע נגיעה ממושכת כדי להציג את האפשרויות, כולל נעילת מסך, כיבוי המכשיר, כוונון עוצמת שמע וכד'."</string>
+    <string name="help4">4. גע נגיעה ממושכת בלחצן \"חזרה\" כדי להפעיל או לסגור את Mi-POP מיידית</string>
+    <string name="smart_remind_shortcut">לחיצה ממושכת על לחצן \"חזרה בסרגל הניווט מאפשרת או משביתה את Mi-POP.</string>
+    <string name="smart_remind_long_press">לחיצה ממושכת על Mi-POP, פותחת תפריט צץ ובו פעולות מערכת רבות.</string>
+    <string name="smart_remind_screen_shot">"בלחיצה ממושכת על Mi-POP ובחירת \"צילום בזק\", תוכל לבצע פעולות שונות, כגון ציור, שיתוף וכד'."</string>
+    <string name="smart_remind_full_screen">עם הכניסה למצב מסך מלא, Mi-POP נסגר ט=אוטומטית ונפתח מחדש עם היציאה ממצב מסך מלא.</string>
+    <string name="smart_remind_known">אישור</string>
+</resources>

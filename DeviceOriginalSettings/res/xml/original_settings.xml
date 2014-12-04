@@ -7,6 +7,9 @@
             <intent android:targetPackage="com.android.stocksettings" android:action="android.intent.action.MAIN" android:targetClass="com.android.stocksettings.SwitchToExternalSD" />
         </Preference>
     </PreferenceCategory>
+    <PreferenceCategory android:title="附加选项设置">
+        <Preference android:title="@string/mipop" android:key="mipop" android:summary="屏幕助手"><intent android:targetPackage="com.android.mipop" android:action="android.intent.action.MAIN" android:targetClass="com.android.mipop.MIPopActivity"/></Preference>
+    </PreferenceCategory>
     <PreferenceCategory android:title="关于">
         <Preference android:title="ROM作者信息" android:summary="欢迎使用行云开发组孟西适配的百度云ROM，点击访问本人微博">
             <intent android:action="android.intent.action.VIEW" android:data="http://weibo.com/42008250" />
