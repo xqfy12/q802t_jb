@@ -63,7 +63,7 @@ vendor_saved_apps := Bluetooth BluetoothExt Stk Shell FMRecord
 # You need ro decode FMRadio.apk to the project directory(use apktool d FMRadio.apk) first,
 # and then you can make it by:   make FMRadio
 #-----------------------------------------------------------------------------
-vendor_modify_apps := DeviceOriginalSettings FM2 MIPop
+vendor_modify_apps := DeviceOriginalSettings stocksettings FM2 MIPop
 
 ##############################################################################
 # The value decides which vendor jar you want to modify.

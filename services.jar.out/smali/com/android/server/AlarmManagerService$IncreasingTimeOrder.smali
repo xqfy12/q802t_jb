@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Ljava/util/Comparator",
         "<",
-        "Lcom/android/server/Alarm;",
+        "Lcom/android/server/AlarmManagerService$Alarm;",
         ">;"
     }
 .end annotation
@@ -40,7 +40,7 @@
 
 
 # virtual methods
-.method public compare(Lcom/android/server/Alarm;Lcom/android/server/Alarm;)I
+.method public compare(Lcom/android/server/AlarmManagerService$Alarm;Lcom/android/server/AlarmManagerService$Alarm;)I
     .locals 8
     .parameter "a1"
     .parameter "a2"
@@ -49,11 +49,11 @@
     const-wide/16 v6, 0x0
 
     .line 995
-    iget-wide v0, p1, Lcom/android/server/Alarm;->when:J
+    iget-wide v0, p1, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
     .line 996
     .local v0, when1:J
-    iget-wide v2, p2, Lcom/android/server/Alarm;->when:J
+    iget-wide v2, p2, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
     .line 997
     .local v2, when2:J
@@ -97,13 +97,13 @@
 
     .prologue
     .line 993
-    check-cast p1, Lcom/android/server/Alarm;
+    check-cast p1, Lcom/android/server/AlarmManagerService$Alarm;
 
     .end local p1
-    check-cast p2, Lcom/android/server/Alarm;
+    check-cast p2, Lcom/android/server/AlarmManagerService$Alarm;
 
     .end local p2
-    invoke-virtual {p0, p1, p2}, Lcom/android/server/AlarmManagerService$IncreasingTimeOrder;->compare(Lcom/android/server/Alarm;Lcom/android/server/Alarm;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/server/AlarmManagerService$IncreasingTimeOrder;->compare(Lcom/android/server/AlarmManagerService$Alarm;Lcom/android/server/AlarmManagerService$Alarm;)I
 
     move-result v0
 

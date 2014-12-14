@@ -1,6 +1,6 @@
-.class Lcom/android/server/Alarm;
+.class Lcom/android/server/AlarmManagerService$Alarm;
 .super Ljava/lang/Object;
-.source "Alarm.java"
+.source "AlarmManagerService$Alarm.java"
 
 
 # instance fields
@@ -34,35 +34,35 @@
     invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
 
     .line 22
-    iput-wide v0, p0, Lcom/android/server/Alarm;->when:J
+    iput-wide v0, p0, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
     .line 23
-    iput-wide v0, p0, Lcom/android/server/Alarm;->repeatInterval:J
+    iput-wide v0, p0, Lcom/android/server/AlarmManagerService$Alarm;->repeatInterval:J
 
     .line 24
-    iput-wide v0, p0, Lcom/android/server/Alarm;->intervalAlternative:J
+    iput-wide v0, p0, Lcom/android/server/AlarmManagerService$Alarm;->intervalAlternative:J
 
     .line 25
-    iput-wide v0, p0, Lcom/android/server/Alarm;->wo:J
+    iput-wide v0, p0, Lcom/android/server/AlarmManagerService$Alarm;->wo:J
 
     .line 26
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/server/Alarm;->operation:Landroid/app/PendingIntent;
+    iput-object v0, p0, Lcom/android/server/AlarmManagerService$Alarm;->operation:Landroid/app/PendingIntent;
 
     .line 27
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/server/Alarm;->uid:I
+    iput v0, p0, Lcom/android/server/AlarmManagerService$Alarm;->uid:I
 
     .line 28
     invoke-static {}, Landroid/os/Binder;->getCallingPid()I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/server/Alarm;->pid:I
+    iput v0, p0, Lcom/android/server/AlarmManagerService$Alarm;->pid:I
 
     .line 29
     return-void
@@ -86,7 +86,7 @@
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 56
-    iget v0, p0, Lcom/android/server/Alarm;->type:I
+    iget v0, p0, Lcom/android/server/AlarmManagerService$Alarm;->type:I
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->print(I)V
 
@@ -96,7 +96,7 @@
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 58
-    iget-wide v0, p0, Lcom/android/server/Alarm;->when:J
+    iget-wide v0, p0, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
     invoke-static {v0, v1, p3, p4, p1}, Landroid/util/TimeUtils;->formatDuration(JJLjava/io/PrintWriter;)V
 
@@ -106,7 +106,7 @@
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 60
-    iget-wide v0, p0, Lcom/android/server/Alarm;->repeatInterval:J
+    iget-wide v0, p0, Lcom/android/server/AlarmManagerService$Alarm;->repeatInterval:J
 
     invoke-virtual {p1, v0, v1}, Ljava/io/PrintWriter;->print(J)V
 
@@ -116,7 +116,7 @@
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 62
-    iget-wide v0, p0, Lcom/android/server/Alarm;->intervalAlternative:J
+    iget-wide v0, p0, Lcom/android/server/AlarmManagerService$Alarm;->intervalAlternative:J
 
     invoke-virtual {p1, v0, v1}, Ljava/io/PrintWriter;->print(J)V
 
@@ -126,7 +126,7 @@
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 64
-    iget v0, p0, Lcom/android/server/Alarm;->count:I
+    iget v0, p0, Lcom/android/server/AlarmManagerService$Alarm;->count:I
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(I)V
 
@@ -139,7 +139,7 @@
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
 
     .line 67
-    iget-object v0, p0, Lcom/android/server/Alarm;->operation:Landroid/app/PendingIntent;
+    iget-object v0, p0, Lcom/android/server/AlarmManagerService$Alarm;->operation:Landroid/app/PendingIntent;
 
     invoke-virtual {p1, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/Object;)V
 
@@ -157,19 +157,19 @@
 
     .prologue
     .line 33
-    iput-wide p1, p0, Lcom/android/server/Alarm;->when:J
+    iput-wide p1, p0, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
     .line 34
-    iput-wide p3, p0, Lcom/android/server/Alarm;->repeatInterval:J
+    iput-wide p3, p0, Lcom/android/server/AlarmManagerService$Alarm;->repeatInterval:J
 
     .line 35
-    iput-wide p5, p0, Lcom/android/server/Alarm;->intervalAlternative:J
+    iput-wide p5, p0, Lcom/android/server/AlarmManagerService$Alarm;->intervalAlternative:J
 
     .line 36
-    iput-wide p7, p0, Lcom/android/server/Alarm;->wo:J
+    iput-wide p7, p0, Lcom/android/server/AlarmManagerService$Alarm;->wo:J
 
     .line 37
-    iput-object p9, p0, Lcom/android/server/Alarm;->operation:Landroid/app/PendingIntent;
+    iput-object p9, p0, Lcom/android/server/AlarmManagerService$Alarm;->operation:Landroid/app/PendingIntent;
 
     .line 38
     return-void
@@ -209,7 +209,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 46
-    iget v1, p0, Lcom/android/server/Alarm;->type:I
+    iget v1, p0, Lcom/android/server/AlarmManagerService$Alarm;->type:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -219,7 +219,7 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 48
-    iget-object v1, p0, Lcom/android/server/Alarm;->operation:Landroid/app/PendingIntent;
+    iget-object v1, p0, Lcom/android/server/AlarmManagerService$Alarm;->operation:Landroid/app/PendingIntent;
 
     invoke-virtual {v1}, Landroid/app/PendingIntent;->getTargetPackage()Ljava/lang/String;
 

@@ -506,32 +506,32 @@
     invoke-static {v5, v6}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 167
-    new-instance v2, Lcom/android/server/Alarm;
+    new-instance v2, Lcom/android/server/AlarmManagerService$Alarm;
 
-    invoke-direct {v2}, Lcom/android/server/Alarm;-><init>()V
+    invoke-direct {v2}, Lcom/android/server/AlarmManagerService$Alarm;-><init>()V
 
     .line 168
-    .local v2, alarm:Lcom/android/server/Alarm;
-    iput p1, v2, Lcom/android/server/Alarm;->type:I
+    .local v2, alarm:Lcom/android/server/AlarmManagerService$Alarm;
+    iput p1, v2, Lcom/android/server/AlarmManagerService$Alarm;->type:I
 
     .line 169
-    iput-wide p2, v2, Lcom/android/server/Alarm;->when:J
+    iput-wide p2, v2, Lcom/android/server/AlarmManagerService$Alarm;->when:J
 
     .line 170
-    iput-wide p4, v2, Lcom/android/server/Alarm;->repeatInterval:J
+    iput-wide p4, v2, Lcom/android/server/AlarmManagerService$Alarm;->repeatInterval:J
 
     .line 171
     move-wide/from16 v0, p6
 
-    iput-wide v0, v2, Lcom/android/server/Alarm;->intervalAlternative:J
+    iput-wide v0, v2, Lcom/android/server/AlarmManagerService$Alarm;->intervalAlternative:J
 
     .line 172
     move-object/from16 v0, p8
 
-    iput-object v0, v2, Lcom/android/server/Alarm;->operation:Landroid/app/PendingIntent;
+    iput-object v0, v2, Lcom/android/server/AlarmManagerService$Alarm;->operation:Landroid/app/PendingIntent;
 
     .line 174
-    iget-wide v5, v2, Lcom/android/server/Alarm;->intervalAlternative:J
+    iget-wide v5, v2, Lcom/android/server/AlarmManagerService$Alarm;->intervalAlternative:J
 
     cmp-long v5, v5, p4
 
@@ -540,13 +540,13 @@
     .line 175
     const-wide/16 v5, 0x0
 
-    iput-wide v5, v2, Lcom/android/server/Alarm;->intervalAlternative:J
+    iput-wide v5, v2, Lcom/android/server/AlarmManagerService$Alarm;->intervalAlternative:J
 
     .line 177
     :cond_0
     iget-object v5, p0, Lcom/android/server/BatterySaver;->mAms:Lcom/android/server/AlarmManagerService;
 
-    invoke-virtual {v5, v2}, Lcom/android/server/AlarmManagerService;->addAlarming(Lcom/android/server/Alarm;)V
+    invoke-virtual {v5, v2}, Lcom/android/server/AlarmManagerService;->addAlarming(Lcom/android/server/AlarmManagerService$Alarm;)V
 
     .line 178
     return-void
