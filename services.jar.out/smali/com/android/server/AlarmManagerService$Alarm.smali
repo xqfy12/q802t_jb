@@ -1,6 +1,6 @@
 .class Lcom/android/server/AlarmManagerService$Alarm;
 .super Ljava/lang/Object;
-.source "AlarmManagerService$Alarm.java"
+.source "Alarm.java"
 
 
 # instance fields

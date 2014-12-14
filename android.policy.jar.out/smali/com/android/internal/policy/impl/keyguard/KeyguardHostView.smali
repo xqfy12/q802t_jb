@@ -5979,41 +5979,45 @@
     goto :goto_0
 .end method
 
-# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
-#.method static synthetic access$iget-mContext-a116fd(Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;)Landroid/content/Context;
-#    .locals 1
-#    .parameter "x0"
-#    .prologue
-#    iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
-#    return-object v0
-#.end method
+.method static synthetic access$iget-mContext-a116fd(Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;)Landroid/content/Context;
+    .locals 1
+    .parameter "x0"
 
-# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
-#.method static synthetic access$iget-mContext-a116fd(Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;)Landroid/content/Context;
-#    .locals 1
-#    .parameter "x0"
-#    .prologue
-#    iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
-#    return-object v0
-#.end method
+    .prologue
+    iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
 
-# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
-#.method static synthetic access$iget-mContext-a116fd(Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;)Landroid/content/Context;
-#    .locals 1
-#    .parameter "x0"
-#    .prologue
-#    iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
-#    return-object v0
-#.end method
+    return-object v0
+.end method
 
-# Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
-#.method static synthetic access$iget-mContext-a116fd(Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;)Landroid/content/Context;
-#    .locals 1
-#    .parameter "x0"
-#    .prologue
-#    iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
-#    return-object v0
-#.end method
+.method static synthetic access$iget-mContext-a116fd(Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;)Landroid/content/Context;
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method static synthetic access$iget-mContext-a116fd(Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;)Landroid/content/Context;
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
+
+    return-object v0
+.end method
+
+.method static synthetic access$iget-mContext-a116fd(Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;)Landroid/content/Context;
+    .locals 1
+    .parameter "x0"
+
+    .prologue
+    iget-object v0, p0, Landroid/view/View;->mContext:Landroid/content/Context;
+
+    return-object v0
+.end method
 
 .method static synthetic access$iget-mSecurityModel-b360b8(Lcom/android/internal/policy/impl/keyguard/KeyguardHostView;)Lcom/android/internal/policy/impl/keyguard/KeyguardSecurityModel;
     .locals 1

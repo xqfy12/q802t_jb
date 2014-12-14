@@ -4872,9 +4872,6 @@
     :cond_1
     :goto_1
 
-    invoke-direct/range {p0 .. p2}, Lcom/android/server/MountService;->updateAsecVolumeStateBaidu(Landroid/os/storage/StorageVolume;Ljava/lang/String;)V
-
-#maybe error
     
     invoke-virtual {p1}, Landroid/os/storage/StorageVolume;->isRemovable()Z
 
@@ -4901,6 +4898,9 @@
 
     :cond_2
     :goto_2
+
+    invoke-direct/range {p0 .. p2}, Lcom/android/server/MountService;->updateAsecVolumeStateBaidu(Landroid/os/storage/StorageVolume;Ljava/lang/String;)V
+
     iget-object v7, p0, Lcom/android/server/MountService;->mListeners:Ljava/util/ArrayList;
 
     monitor-enter v7
