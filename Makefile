@@ -54,7 +54,7 @@ RESOLUTION := 720x1280
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/pri-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth BluetoothExt Stk Shell FMRecord
+vendor_saved_apps := Bluetooth BluetoothExt Stk Shell FMRecord TimeService alarming
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -143,7 +143,8 @@ baidu_modify_apps := Phone Settings
 # The default value is Coron.
 # You should configure the property according to your ID, ie, replace "Coron" with your ID.
 override_property += \
-    ro.baidu.romer=mengxi
+    ro.baidu.romer=mengxi \
+    ro.baidu.romerinfo=http://weibo.com/42008250/	
 
 ##############################################################################
 # The value decides which property you will remove from the build.prop.
