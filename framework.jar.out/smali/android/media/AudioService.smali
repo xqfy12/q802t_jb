@@ -13153,9 +13153,10 @@
 
     invoke-direct {v4}, Landroid/app/Notification;-><init>()V
 
+#hidden ear icon
     .line 3960
-    .local v4, notification:Landroid/app/Notification;
-    iput v9, v4, Landroid/app/Notification;->icon:I
+#    .local v4, notification:Landroid/app/Notification;
+#    iput v9, v4, Landroid/app/Notification;->icon:I
 
     .line 3961
     iput-object v5, v4, Landroid/app/Notification;->tickerText:Ljava/lang/CharSequence;

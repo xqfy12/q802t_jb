@@ -310,13 +310,12 @@
     :try_start_1
     iget-object v11, p0, Landroid/widget/QuickContactBadge$QueryHandler;->this$0:Landroid/widget/QuickContactBadge;
 
-    #invoke-virtual {v11}, Landroid/widget/QuickContactBadge;->getContext()Landroid/content/Context;
+    invoke-virtual {v11}, Landroid/widget/QuickContactBadge;->getContext()Landroid/content/Context;
 
-    #move-result-object v11
+    move-result-object v11
 
-    #invoke-virtual {v11, v7}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {v11, v7}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
     
-    invoke-static {v11, v4}, Landroid/widget/QuickContactBadge$BaiduInjector;->showStrangeQuickContact(Landroid/widget/QuickContactBadge;Landroid/net/Uri;)V
 
     :try_end_1
     .catch Landroid/content/ActivityNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
@@ -331,19 +330,20 @@
     .local v5, e:Landroid/content/ActivityNotFoundException;
     iget-object v11, p0, Landroid/widget/QuickContactBadge$QueryHandler;->this$0:Landroid/widget/QuickContactBadge;
 
-    invoke-virtual {v11}, Landroid/widget/QuickContactBadge;->getContext()Landroid/content/Context;
+#    invoke-virtual {v11}, Landroid/widget/QuickContactBadge;->getContext()Landroid/content/Context;
 
-    move-result-object v11
+#    move-result-object v11
 
-    const v12, #android:string@no_quick_contact#t
+#    const v12, #android:string@no_quick_contact#t
+    invoke-static {v11, v4}, Landroid/widget/QuickContactBadge$BaiduInjector;->showStrangeQuickContact(Landroid/widget/QuickContactBadge;Landroid/net/Uri;)V
 
-    const/4 v13, 0x0
+#    const/4 v13, 0x0
 
-    invoke-static {v11, v12, v13}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
+#    invoke-static {v11, v12, v13}, Landroid/widget/Toast;->makeText(Landroid/content/Context;II)Landroid/widget/Toast;
 
-    move-result-object v11
+#    move-result-object v11
 
-    invoke-virtual {v11}, Landroid/widget/Toast;->show()V
+#    invoke-virtual {v11}, Landroid/widget/Toast;->show()V
 
     goto/16 :goto_2
 

@@ -11,6 +11,7 @@
         Lcom/android/server/AlarmManagerService$ClockReceiver;,
         Lcom/android/server/AlarmManagerService$AlarmHandler;,
         Lcom/android/server/AlarmManagerService$AlarmThread;,
+        Lcom/android/server/AlarmManagerService$Alarm;,
         Lcom/android/server/AlarmManagerService$IncreasingTimeOrder;,
         Lcom/android/server/AlarmManagerService$BaiduInjector;,
         Lcom/android/server/AlarmManagerService$BroadcastStats;,
@@ -4422,13 +4423,13 @@
 .end method
 
 # Remove the first '#' if you want to enable this method. It might be invoked from codes of BOSP.
-#.method static synthetic access$iget-mContext-f29a11(Lcom/android/server/AlarmManagerService;)Landroid/content/Context;
-#    .locals 1
-#    .parameter "x0"
-#    .prologue
-#    iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mContext:Landroid/content/Context;
-#    return-object v0
-#.end method
+.method static synthetic access$iget-mContext-f29a11(Lcom/android/server/AlarmManagerService;)Landroid/content/Context;
+    .locals 1
+    .parameter "x0"
+    .prologue
+    iget-object v0, p0, Lcom/android/server/AlarmManagerService;->mContext:Landroid/content/Context;
+    return-object v0
+.end method
 
 
 .method static synthetic access$invoke-setLocked-2e1e0e(Lcom/android/server/AlarmManagerService;Lcom/android/server/AlarmManagerService$Alarm;)V

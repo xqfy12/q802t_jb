@@ -54,8 +54,8 @@ RESOLUTION := 720x1280
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/pri-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth BluetoothExt Stk Shell FMRecord TimeService alarming
-
+vendor_saved_apps := FMRecord alarming
+#Bluetooth BluetoothExt Stk Shell TimeService 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
 # The modify jar will build from the directory named the vendor apk name in the current project root directory.
@@ -72,7 +72,7 @@ vendor_modify_apps := DeviceOriginalSettings FM2 MIPop
 # You need to decode android.policy.jar to the project directory (use apktool d android.policy.jar) first,
 # and then you can make it by:   make android.policy
 #-----------------------------------------------------------------------------
-vendor_modify_jars := android.policy framework oem-services pm services-ext services telephony-common
+vendor_modify_jars := android.policy framework oem-services pm services-ext services telephony-common IZTESecurity
 
 ##############################################################################
 # The value decides which baidu system directory you want to save.
@@ -93,7 +93,7 @@ vendor_modify_jars := android.policy framework oem-services pm services-ext serv
 # The default value is nothing.
 # You can configure the baidu system apk name in the value.
 #-----------------------------------------------------------------------------
-#baidu_remove_apps := BaiduUserFeedback
+baidu_remove_apps := BaiduUpdate
 
 ##############################################################################
 # The value decides which apk you want to modify, when the apk is based on the baidu system apk.

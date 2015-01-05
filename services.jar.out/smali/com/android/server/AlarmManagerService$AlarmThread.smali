@@ -179,7 +179,7 @@
     move-wide/from16 v1, v18
 
     #calls: Lcom/android/server/AlarmManagerService;->triggerAlarmsLockedBaidu(Ljava/util/ArrayList;Ljava/util/ArrayList;J)V
-    invoke-static {v3, v4, v0, v1, v2}, Lcom/android/server/AlarmManagerService;->access$700(Lcom/android/server/AlarmManagerService;Ljava/util/ArrayList;Ljava/util/ArrayList;J)V
+    invoke-static {v3, v4, v0, v1, v2}, Lcom/android/server/AlarmManagerService;->access$invoke-triggerAlarmsLockedBaidu-bb488a(Lcom/android/server/AlarmManagerService;Ljava/util/ArrayList;Ljava/util/ArrayList;J)V
 
     .line 1042
     :cond_1
@@ -233,7 +233,7 @@
     move-wide/from16 v1, v16
 
     #calls: Lcom/android/server/AlarmManagerService;->triggerAlarmsLockedBaidu(Ljava/util/ArrayList;Ljava/util/ArrayList;J)V
-    invoke-static {v3, v4, v0, v1, v2}, Lcom/android/server/AlarmManagerService;->access$700(Lcom/android/server/AlarmManagerService;Ljava/util/ArrayList;Ljava/util/ArrayList;J)V
+    invoke-static {v3, v4, v0, v1, v2}, Lcom/android/server/AlarmManagerService;->access$invoke-triggerAlarmsLockedBaidu-bb488a(Lcom/android/server/AlarmManagerService;Ljava/util/ArrayList;Ljava/util/ArrayList;J)V
 
     .line 1048
     :cond_3
