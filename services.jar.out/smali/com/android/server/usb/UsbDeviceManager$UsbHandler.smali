@@ -1294,7 +1294,7 @@
 
     move-result-object v10
 
-    invoke-virtual {v10, v3, v2}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
+    #invoke-virtual {v10, v3, v2}, Landroid/app/NotificationManager;->notify(ILandroid/app/Notification;)V
 
     .line 931
     invoke-static {}, Lcom/android/server/usb/UsbDeviceManager;->access$200()Ljava/lang/String;
@@ -2118,7 +2118,7 @@
     .local v11, pcConnectIntent:Landroid/content/Intent;
     const-string v18, "com.android.settings"
 
-    const-string v19, "com.android.settings.DevelopmentSettings"
+    const-string v19, "com.android.settings.UsbSettings"
 
     move-object/from16 v0, v18
 
@@ -3728,8 +3728,6 @@
     goto :goto_5
 
     .line 836
-    nop
-
     nop
 
     :pswitch_data_0
