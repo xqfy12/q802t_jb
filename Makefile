@@ -54,8 +54,8 @@ RESOLUTION := 720x1280
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/pri-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := FMRecord
-#Bluetooth BluetoothExt Stk Shell TimeService  alarming
+#vendor_saved_apps := FMRecord Bluetooth BluetoothExt Stk Shell TimeService  alarming
+
 ##############################################################################
 # The value decides which vendor apk you want to modify.
 # The modify jar will build from the directory named the vendor apk name in the current project root directory.
